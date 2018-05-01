@@ -1,8 +1,8 @@
 {
     "name": "alpstein/yii-enhancement",
     "description": "Boilerplate package for creating other packages.",
-    "keywords": ["template", "composer", "package"],
-    "license": "DBAD",
+    "keywords": ["yii", "enhancement", "library"],
+    "license": "Alpstein Software Proprietary",
     "authors": [
         {
             "name": "RYU Chua",
@@ -11,7 +11,7 @@
     ],
     "type": "library",
     "require": {
-		"php": ">=7.1",
+		"php": ">=7.0",
         "yiisoft/yii2": "~2.0.15",
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-twig": "~2.0.0",
