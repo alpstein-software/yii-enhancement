@@ -20,7 +20,7 @@ class AdminLteAsset extends AssetBundle
      * To be published
      * @var string
      */
-    public $sourcePath = '@alpstein/adminlte/assets/dist';
+    public $sourcePath = __DIR__ . '/dist';
 
     /**
      * @var array
