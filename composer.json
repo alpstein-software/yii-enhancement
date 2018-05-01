@@ -1,49 +1,53 @@
 {
-    "name": "alpstein/yii-enhancement",
-    "description": "Boilerplate package for creating other packages.",
-    "keywords": ["yii", "enhancement", "library"],
-    "license": "Alpstein Software Proprietary",
-    "authors": [
-        {
-            "name": "RYU Chua",
-            "email": "ryu@alpstein.my"
-        }
-    ],
-    "type": "library",
-    "require": {
-		"php": ">=7.0",
-        "yiisoft/yii2": "~2.0.15",
-        "yiisoft/yii2-bootstrap": "~2.0.0",
-        "yiisoft/yii2-twig": "~2.0.0",
-        "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
-        "yiisoft/yii2-redis": "^2.0",
-        "yiisoft/yii2-queue": "^2.0",
-        "yiisoft/yii2-httpclient": "^2.0",
-        "yiisoft/yii2-imagine": "^2.1",
-        "yiisoft/yii2-elasticsearch": "~2.0.0",
-        "2amigos/yii2-date-picker-widget": "~1.0",
-        "2amigos/yii2-date-time-picker-widget": "~1.0",
-        "2amigos/yii2-tinymce-widget": "~1.1",
-        "kartik-v/yii2-widget-growl": "^1.1",
-        "kartik-v/yii2-widget-fileinput": "^1.0",
-        "kartik-v/yii2-widget-colorinput": "*",
-        "kartik-v/yii2-widget-select2": "@dev",
-        "insolita/yii2-opcache": "~1.0",
-        "kolyunya/yii2-map-input-widget": "^1.2",
-        "thamtech/yii2-uuid": "^1.0",
-        "endroid/qr-code": "^2.5",
-        "jenssegers/agent": "^2.6",
-        "php-amqplib/php-amqplib": "^2.7",
-        "mailgun/mailgun-php": "^2.5",
-        "php-http/curl-client": "^1.7",
-        "guzzlehttp/psr7": "^1.4",
-        "facebook/graph-sdk" : "~5.0",
-        "google/cloud": "^0.56.0",
-        "aws/aws-sdk-php": "^3.52"
-    },
-	"autoload": {
-        "psr-4": {
-            "alpstein\\": "src/"
-        }
+  "name": "alpstein/yii-enhancement",
+  "description": "Boilerplate package for creating other packages.",
+  "keywords": [
+    "yii",
+    "enhancement",
+    "library"
+  ],
+  "license": "Alpstein Software Proprietary",
+  "authors": [
+    {
+      "name": "RYU Chua",
+      "email": "ryu@alpstein.my"
     }
+  ],
+  "type": "library",
+  "require": {
+    "php": ">=7.0",
+    "yiisoft/yii2": "~2.0.15",
+    "yiisoft/yii2-bootstrap": "~2.0.0",
+    "yiisoft/yii2-twig": "~2.0.0",
+    "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
+    "yiisoft/yii2-redis": "^2.0",
+    "yiisoft/yii2-queue": "^2.0",
+    "yiisoft/yii2-httpclient": "^2.0",
+    "yiisoft/yii2-imagine": "^2.1",
+    "yiisoft/yii2-elasticsearch": "~2.0.0",
+    "2amigos/yii2-date-picker-widget": "~1.0",
+    "2amigos/yii2-date-time-picker-widget": "~1.0",
+    "2amigos/yii2-tinymce-widget": "~1.1",
+    "kartik-v/yii2-widget-growl": "^1.1",
+    "kartik-v/yii2-widget-fileinput": "^1.0",
+    "kartik-v/yii2-widget-colorinput": "*",
+    "kartik-v/yii2-widget-select2": "@dev",
+    "insolita/yii2-opcache": "~1.0",
+    "kolyunya/yii2-map-input-widget": "^1.2",
+    "thamtech/yii2-uuid": "^1.0",
+    "endroid/qr-code": "^2.5",
+    "jenssegers/agent": "^2.6",
+    "php-amqplib/php-amqplib": "^2.7",
+    "mailgun/mailgun-php": "^2.5",
+    "php-http/curl-client": "^1.7",
+    "guzzlehttp/psr7": "^1.4",
+    "facebook/graph-sdk": "~5.0",
+    "google/cloud": "^0.56.0",
+    "aws/aws-sdk-php": "^3.52"
+  },
+  "autoload": {
+    "psr-4": {
+      "alpstein\\": "src/"
+    }
+  }
 }
