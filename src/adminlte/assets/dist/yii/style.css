@@ -123,7 +123,13 @@ p.help-block {
 .nav-stacked.nav-warning > li.active > a:hover {
     border-left-color: #f39c12;
 }
-
+/*** profile image ***/
+.navbar-nav > .user-menu .user-image {
+    background-color: white;
+}
+.navbar-nav > .user-menu > .dropdown-menu > li.user-header > img {
+    background-color: white;
+}
 
 /**** Bapu ****/
 .bapu-category-icon {

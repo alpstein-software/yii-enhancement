@@ -100,7 +100,7 @@ class ImageHelper extends BaseObject
 
             if (is_file($tempFile)) {
                 $folder = YII_DEBUG ? 'dev' : 'prod';
-                $key = $folder . '/' . trim($path, '/') . '/' . sprintf('%s_web_%s.jpg', $id, time());
+                $key = $folder . '/' . trim($path, '/') . '/' . sprintf('%s_web_%s.' . $file->getExtension(), $id, time());
 
                 $client = Yii::$app->aws->getS3Client();
                 $result = $client->putObject([
