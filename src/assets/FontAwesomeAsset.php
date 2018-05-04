@@ -17,7 +17,7 @@ class FontAwesomeAsset extends AssetBundle
      * To be published
      * @var string
      */
-    public $sourcePath = '@alpstein/assets/fontawesome';
+    public $sourcePath = __DIR__ . '/fontawesome';
 
     /**
      * @var array
