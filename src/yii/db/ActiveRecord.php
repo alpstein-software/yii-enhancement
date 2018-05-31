@@ -32,6 +32,20 @@ class ActiveRecord extends \yii\db\ActiveRecord
     }
 
     /**
+     * @return bool
+     */
+    public function toggleActive()
+    {
+        if ($this->hasAttribute('is_active')) {
+            $value = (bool) $this->getAttribute('is_active');
+            $this->setAttribute('is_active', !$value);
+            return $this->save(false);
+        }
+
+        return false;
+    }
+
+    /**
      * @inheritdoc
      * @param array $fields
      * @param array $expand
