@@ -25,7 +25,7 @@ class ImageFileInput extends FileInput
      */
     public $pluginOptions = [
         'allowedPreviewTypes' => ['image', 'video'],
-        'allowedFileExtensions' => ['jpg', 'jpeg', 'png'],
+        'allowedFileExtensions' => ['jpg', 'jpeg', 'png', 'gif'],
         'fileActionSettings' => [
             'showZoom' => false,
             'indicatorNew' => '',
