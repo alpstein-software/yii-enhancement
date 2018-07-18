@@ -322,6 +322,9 @@ class Sanitizer extends BaseObject
             $this->htmlPurifier->config->set($key, $value);
         }
 
+        $def = $this->htmlPurifier->config->getHTMLDefinition(true);
+        $def->addAttribute('iframe', 'allowfullscreen', 'Enum#allowfullscreen');
+
         return $this->htmlPurifier;
     }
 
