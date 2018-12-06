@@ -46,6 +46,18 @@ class ActiveRecord extends \yii\db\ActiveRecord
     }
 
     /**
+     * @return mixed
+     */
+    public function getIsActive()
+    {
+        if ($this->hasAttribute('is_active')) {
+            return (bool) $this->getAttribute('is_active');
+        }
+
+        return false;
+    }
+
+    /**
      * @inheritdoc
      * @param array $fields
      * @param array $expand

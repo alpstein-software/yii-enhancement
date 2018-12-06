@@ -19,7 +19,7 @@ class ActiveQuery extends \yii\db\ActiveQuery
     private $__alias;
 
     /**
-     * @param int $value
+     * @param int|array $value
      * @return $this
      */
     public function id($value)

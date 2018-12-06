@@ -32,9 +32,11 @@ class Controller extends \yii\console\Controller
      */
     public function options($actionID)
     {
-        return ['confirm'];
+        return array_merge(
+            parent::options($actionID),
+            ['confirm']
+        );
     }
-
     /**
      * Print this command's help
      * @throws \yii\console\Exception
