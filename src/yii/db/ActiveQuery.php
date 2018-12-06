@@ -64,6 +64,8 @@ class ActiveQuery extends \yii\db\ActiveQuery
     protected function setAlias($value)
     {
         $this->replaceAlias($this->where, $this->getAlias(), $value);
+        $this->replaceAlias($this->orderBy, $this->getAlias(), $value);
+
         $this->__alias = $value;
     }
 
@@ -76,13 +78,18 @@ class ActiveQuery extends \yii\db\ActiveQuery
     {
         if (is_array($where)) {
             foreach ($where as $key => &$value) {
-                if (is_array($value)) {
-                    $this->replaceAlias($value, $from, $to);
-                } elseif (is_string($key) && strpos($key, $from . '.') !== false) {
-                    $newKey = str_replace($from . '.', $to . '.', $key);
+                if (is_string($key) && strpos($key, $from . '.[[') !== false) {
+                    $newKey = str_replace($from . '.[[', $to . '.[[', $key);
                     $where[$newKey] = $value;
                     unset($where[$key]);
                 }
+
+                if (is_array($value)) {
+                    $this->replaceAlias($value, $from, $to);
+                } elseif (is_string($value) && strpos($value, $from . '.[[') !== false) {
+                    $where[$key] = str_replace($from . '.[[', $to . '.[[', $value);
+                }
+
                 unset($value);//clean up pointer reference
             }
         }
