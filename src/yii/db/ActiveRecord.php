@@ -141,5 +141,15 @@ class ActiveRecord extends \yii\db\ActiveRecord
             return $default;
         }
     }
+
+    /**
+     * reset the runtime cache
+     * return $this
+     */
+    public function flushData()
+    {
+        $this->__data = [];
+        return $this;
+    }
 }
 
