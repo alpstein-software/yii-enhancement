@@ -42,7 +42,7 @@
     "php-http/curl-client": "^1.7",
     "guzzlehttp/psr7": "^1.4",
     "facebook/graph-sdk": "~5.0",
-    "google/cloud": "^0.56.0",
+    "google/cloud": "^0.136.0",
     "aws/aws-sdk-php": "^3.52"
   },
   "autoload": {
